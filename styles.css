@@ -151,10 +151,10 @@
 }
 
 .footer-container {
-        background-color: #F5EFE6;
-        padding-top: 2%;
-        padding-bottom: 1%;
-        text-align: center;
+    background-image: linear-gradient(#F6C391, white, #F6C391);
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: center;
     } 
 
 .footer-logo {
@@ -191,12 +191,13 @@
     }
 
     .introduction-heading {
+        font-size: 5rem;
         margin-left: 5%;
         padding-top: 5%;
     }
 
     .introduction-paragraph {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 2;
         margin-left: 5%;
         width: 90%;
