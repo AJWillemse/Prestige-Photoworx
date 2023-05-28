@@ -203,6 +203,10 @@
         width: 90%;
     }
 
+    .previews-heading {
+        font-size: 6rem;
+    }
+
     .contact-me {
         padding-bottom: 7%;
         padding-top: 2%;
