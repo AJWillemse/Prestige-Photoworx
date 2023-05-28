@@ -9,16 +9,14 @@
 
 .introduction {
     background-image: url("images/background image.png");
-    position: relative;
-    padding-bottom: 8%;
+    padding-bottom: 4%;
 }
 
 .profile-picture {
-    float: left;
-    margin-left: 8%;
+    float: right;
+    margin-left: 2%;
     margin-right: 3%;
-    position: relative;
-    width: 40%;
+    width: 35%;
 }
 
 .introduction-heading {
@@ -27,7 +25,7 @@
     font-size: 3rem;
     font-weight: 400;
     padding-top: 3%;
-    position: relative;
+    margin-left: 2%;
     text-shadow: 0px 0px 10px #F5EFE6;
 }
 
@@ -35,10 +33,10 @@
     color: #F5EFE6;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    line-height: 2.4;
-    position: relative;
+    line-height: 2.2;
+    margin-left: 2%;
     text-shadow: 0px 0px 10px #F5EFE6;
-    width: 90%;
+    width: 95%;
 }
 
 .company-slogan {
@@ -57,8 +55,7 @@
     font-size: 4rem;
     margin-bottom: 0;
     padding-bottom: 4%;
-    padding-top: 3%;
-    position: relative;
+    padding-top: 5%;
     text-align: center;
     text-decoration: underline;
     text-shadow: 0px 0px 12px #FFA559;
