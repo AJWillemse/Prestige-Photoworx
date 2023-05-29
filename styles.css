@@ -44,7 +44,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-decoration: underline;
-    text-shadow: 0px 0px 10px #576CBC;
+    text-shadow: 0px 0px 10px #C4B0FF;
 }
 
 .previews-heading {
@@ -58,7 +58,7 @@
     padding-top: 5%;
     text-align: center;
     text-decoration: underline;
-    text-shadow: 0px 0px 12px #576CBC;
+    text-shadow: 0px 0px 12px #C4B0FF;
 }
 
 .row {
@@ -99,7 +99,7 @@
     padding-top: 3%;
     position: relative;
     text-decoration: underline;
-    text-shadow: 0px 0px 12px #576CBC;
+    text-shadow: 0px 0px 12px #C4B0FF;
 }
 
 .contact-me-name {
