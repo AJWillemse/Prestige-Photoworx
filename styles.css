@@ -44,7 +44,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-decoration: underline;
-    text-shadow: 0px 0px 10px #FFA559;
+    text-shadow: 0px 0px 10px #576CBC;
 }
 
 .previews-heading {
@@ -58,7 +58,7 @@
     padding-top: 5%;
     text-align: center;
     text-decoration: underline;
-    text-shadow: 0px 0px 12px #FFA559;
+    text-shadow: 0px 0px 12px #576CBC;
 }
 
 .row {
@@ -99,7 +99,7 @@
     padding-top: 3%;
     position: relative;
     text-decoration: underline;
-    text-shadow: 0px 0px 12px #FFA559;
+    text-shadow: 0px 0px 12px #576CBC;
 }
 
 .contact-me-name {
@@ -151,21 +151,14 @@
 }
 
 .footer-container {
-    background-image: linear-gradient(#F6C391, white, #F6C391);
-    padding-top: 2%;
-    padding-bottom: 1%;
-    text-align: center;
-    } 
-
-.footer-logo {
-    width: 10%;
-}    
-
-.copyright {
+    background-image: linear-gradient(#576CBC, white, #576CBC);
+    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    color: #3C4048;
-}
+    font-size: 1.5rem;
+    padding-bottom: 0.1%;
+    padding-top: 1%;
+    text-align: center;
+    }
 
 
 
@@ -213,18 +206,15 @@
     }
 
     .contact-me-name {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .contact-me-number {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
-    .footer-logo {
-        width: 20%;
-    }
-
-    .copyright {
+    .btn {
+        width: 25%;
         font-size: 2rem;
     }
 
