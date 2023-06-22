@@ -184,33 +184,19 @@
     }
 
     .introduction-heading {
-        font-size: 5rem;
         margin-left: 5%;
         padding-top: 5%;
     }
 
     .introduction-paragraph {
-        font-size: 3rem;
         line-height: 1.5;
         margin-left: 5%;
         width: 90%;
     }
 
-    .previews-heading {
-        font-size: 6rem;
-    }
-
     .contact-me {
         padding-bottom: 7%;
         padding-top: 2%;
-    }
-
-    .contact-me-name {
-        font-size: 3.5rem;
-    }
-
-    .contact-me-number {
-        font-size: 3.5rem;
     }
 
     .btn {
