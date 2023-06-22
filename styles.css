@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .company-header {
     position: relative;
     width: 100%;
@@ -21,7 +25,6 @@
 
 .introduction-heading {
     color: #F5EFE6;
-    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     font-weight: 400;
     padding-top: 3%;
@@ -31,7 +34,6 @@
 
 .introduction-paragraph {
     color: #F5EFE6;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     line-height: 2.2;
     margin-left: 2%;
@@ -41,7 +43,6 @@
 
 .company-slogan {
     color: #FFA559;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-decoration: underline;
     text-shadow: 0px 0px 10px #C4B0FF;
@@ -49,7 +50,6 @@
 
 .previews-heading {
     background-color: #3C4048;
-    font-family: 'Montserrat', sans-serif;
     color: #F5EFE6;
     font-weight: 400;
     font-size: 4rem;
@@ -91,7 +91,6 @@
 } 
 
 .contact-me-heading {
-    font-family: 'Montserrat', sans-serif;
     color: #F5EFE6;
     font-weight: 400;
     font-size: 4rem;
@@ -103,7 +102,6 @@
 }
 
 .contact-me-name {
-    font-family: 'Montserrat', sans-serif;
     color: #F5EFE6;
     font-size: 2.5rem;
     font-weight: lighter;
@@ -111,7 +109,6 @@
 }
 
 .contact-me-number {
-    font-family: 'Montserrat', sans-serif;
     color: #F5EFE6;
     font-size: 2.5rem;
     font-weight: lighter;
@@ -152,8 +149,7 @@
 
 .footer-container {
     background-image: linear-gradient(#C4B0FF, white, #C4B0FF);
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: black;
     font-size: 1.5rem;
     padding-bottom: 0.1%;
     padding-top: 1%;
