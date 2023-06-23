@@ -19,11 +19,6 @@ body {
     background-image: url(images/background\ image.jpg);
 }
 
-
-
-
-
-
 .fade-in {
     opacity: 0;
     transition: opacity 3s ease-in-out;
@@ -78,9 +73,6 @@ body {
     font-weight: bold;
 }
 
-
-
-
 .preview {
     display: flex;
     flex-wrap: wrap;
@@ -115,8 +107,54 @@ body {
     width: 20%;
 }
 
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+  }
+  
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  
+.modal-image {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+  
+@keyframes modal-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
+.close-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #C8C6C6;
+    cursor: pointer;
+  }
 
+.overflow-hidden {
+    overflow: hidden;
+  }
 
 .footer-container {
     background-image: linear-gradient(#222222, #C8C6C6, #222222);
