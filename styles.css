@@ -152,15 +152,16 @@ body {
     }
 
     .h1-preview {
-        font-size: 3rem;
+        font-size: 7rem;
     }
 
     .text-profile {
+        font-size: 2.5rem;
         margin-right: 3%;
     }
 
     .btn {
-        font-size: 2rem;
+        font-size: 2.5rem;
         width: 30%;
     }
 
