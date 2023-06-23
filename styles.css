@@ -7,7 +7,12 @@ body {
 
 #cover {
     opacity: 0;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+
+#profile {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
 .body {
@@ -42,6 +47,7 @@ body {
     margin: auto;
     margin-top: 8%;
     padding-bottom: 5%;
+    position: relative;
     width: 90%;
 }
 
@@ -150,17 +156,12 @@ body {
     }
 
     .text-profile {
-        font-size: 1rem;
         margin-right: 3%;
     }
 
     .btn {
-        font-size: 1rem;
+        font-size: 2rem;
         width: 30%;
-    }
-
-    .footer-link {
-        width: 1%;
     }
 
 }

@@ -6,6 +6,15 @@ window.addEventListener('load', function() {
 
 
 
+  window.addEventListener('load', function() {
+    var image = document.getElementById('profile');
+    image.style.opacity = 1;
+  });
+
+
+
+
+
   function isElementPartiallyInViewport(element) {
     var rect = element.getBoundingClientRect();
     var windowHeight = window.innerHeight || document.documentElement.clientHeight;
