@@ -35,8 +35,8 @@ body {
 }
 
 .profile {
-    backdrop-filter: blur(6px);
-    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     box-shadow: 0px 0px 20px #C8C6C6;
     margin: auto;
@@ -50,6 +50,7 @@ body {
     box-shadow: 0px 0px 20px #C8C6C6;
     border-radius: 400px;
     float: right;
+    margin-left: 3%;
     margin-bottom: 3%;
     margin-top: 3%;
     margin-right: 5%;
@@ -80,8 +81,13 @@ body {
 
 .h1-preview {
     font-size: 7rem;
-    padding-bottom: 3%;
     padding-top: 3%;
+    text-align: center;
+}
+
+.h3-preview {
+    font-size: 2.5rem;
+    font-weight: lighter;
     text-align: center;
 }
 
@@ -157,7 +163,7 @@ body {
   }
 
 .footer-container {
-    background-image: linear-gradient(#164B60, #C8C6C6, #164B60);
+    background-image: linear-gradient(#2E4F4F, #C8C6C6, #2E4F4F);
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
