@@ -79,7 +79,7 @@ body {
 }
 
 .h1-preview {
-    font-size: 5rem;
+    font-size: 7rem;
     padding-bottom: 3%;
     padding-top: 3%;
     text-align: center;
@@ -144,7 +144,7 @@ body {
 
 .close-button {
     position: absolute;
-    top: 50px;
+    bottom: 50px;
     right: 50px;
     font-size: 50px;
     font-weight: bold;
@@ -157,17 +157,26 @@ body {
   }
 
 .footer-container {
-    background-image: linear-gradient(#222222, #C8C6C6, #222222);
+    background-image: linear-gradient(#164B60, #C8C6C6, #164B60);
     color: black;
     font-size: 1.5rem;
+    font-weight: bold;
     margin-top: 8%;
     padding-bottom: 0.1%;
     text-align: center;
 }
 
-.footer-link {
+.logo-facebook {
     width: 10%;
-    margin: 1%;
+    margin: auto;
+    margin-right: 1%;
+}
+
+.logo-instagram {
+    width: 10%;
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 0.8%;
 }
 
 
@@ -202,6 +211,15 @@ body {
     .btn {
         font-size: 3rem;
         width: 40%;
+    }
+
+    .logo-facebook {
+        width: 20%;
+    }
+
+    .logo-instagram {
+        width: 20%;
+        margin-top: 1.8%;
     }
 
 }
