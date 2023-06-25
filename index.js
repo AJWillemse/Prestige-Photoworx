@@ -110,36 +110,29 @@ document.addEventListener("DOMContentLoaded", function () {
   modalContainer.classList.add("modal-container");
   modalContainer.appendChild(modalContent);
 
-  
   modalContent.id = "modalContent";
   modalContent.classList.add("modal-content");
   modalContent.appendChild(modalImage);
   modalContent.appendChild(closeButton);
 
-
   modalImage.id = "modalImage";
   modalImage.classList.add("modal-image");
   modalImage.setAttribute("alt", "");
 
- 
   closeButton.classList.add("close-button");
   closeButton.innerHTML = "&times;";
 
-  
   document.body.appendChild(modalContainer);
 
-  
   previewImages.forEach(function (image) {
     image.addEventListener("click", function () {
       
       var source = image.getAttribute("src");
       var alt = image.getAttribute("alt");
 
-      
       modalImage.setAttribute("src", source);
       modalImage.setAttribute("alt", alt);
-
-     
+      
       modalContainer.style.display = "block";
 
      
