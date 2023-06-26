@@ -164,12 +164,20 @@ body {
 
 .footer-container {
     background-image: linear-gradient(#2E4F4F, #C8C6C6, #2E4F4F);
+}
+
+.copyright-text {
     color: black;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 8%;
-    padding-bottom: 0.1%;
+    margin: auto;
     text-align: center;
+    text-shadow: 0px 0px 6px white;
+}
+
+.copyright-h3 {
+    color: black;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0px 0px 6px white;
 }
 
 .logo-facebook {
