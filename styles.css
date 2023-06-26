@@ -237,7 +237,15 @@ body {
 
     .logo-instagram {
         width: 20%;
-        margin-top: 1.8%;
+        margin-top: 2.6%;
+    }
+
+    .copyright-text {
+        font-size: 1rem;
+    }
+
+    .copyright-h3 {
+        font-size: 1.5rem;
     }
 
 }
