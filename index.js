@@ -111,7 +111,7 @@ $(window).on('load', function() {
     
       $("body").append(modalContainer);
     
-      var delay = 500; // Delay in milliseconds
+      var delay = 1000; // Delay in milliseconds
     
       previewImages.each(function() {
         var image = $(this);
