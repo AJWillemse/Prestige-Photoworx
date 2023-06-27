@@ -48,6 +48,18 @@ $(window).on('load', function() {
 
 
   $(document).ready(function() {
+    $('.clickable-image').on('click', function() {
+      if ('vibrate' in navigator) {
+        navigator.vibrate(100); 
+      }
+    });
+  });
+
+
+
+
+
+  $(document).ready(function() {
     var previewImages = $("#imageContainer img");
     var modalContainer = $("<div></div>").attr("id", "modalContainer").addClass("modal-container");
     var modalContent = $("<div></div>").attr("id", "modalContent").addClass("modal-content");
