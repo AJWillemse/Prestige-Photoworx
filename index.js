@@ -1,14 +1,14 @@
-window.addEventListener('load', function() {
-    var image = document.getElementById('cover');
-    image.style.opacity = 1;
-  });
+$(window).on('load', function() {
+  var image = $('#cover');
+  image.css('opacity', 1);
+});
 
 
 
 
-  window.addEventListener('load', function() {
-    var image = document.getElementById('profile');
-    image.style.opacity = 1;
+  $(window).on('load', function() {
+    var image = $('#profile');
+    image.css('opacity', 1);
   });
 
 
@@ -17,8 +17,8 @@ window.addEventListener('load', function() {
 
   function isElementPartiallyInViewport(element) {
     var rect = element.getBoundingClientRect();
-    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
   
     var isTopVisible = rect.top < windowHeight && rect.bottom >= 0;
     var isLeftVisible = rect.left < windowWidth && rect.right >= 0;
@@ -27,35 +27,34 @@ window.addEventListener('load', function() {
   }
   
   function handleScroll() {
-    var fadeIns = document.getElementsByClassName('fade-in');
+    var fadeIns = $('.fade-in');
   
-    for (var i = 0; i < fadeIns.length; i++) {
-      var div = fadeIns[i];
+    fadeIns.each(function(index, element) {
+      var div = $(element);
   
-      if (isElementPartiallyInViewport(div)) {
-        div.style.opacity = '1';
+      if (isElementPartiallyInViewport(element)) {
+        div.css('opacity', '1');
       } else {
-        div.style.opacity = '0';
+        div.css('opacity', '0');
       }
-    }
+    });
   }
   
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('resize', handleScroll);
+  $(window).on('scroll', handleScroll);
+  $(window).on('resize', handleScroll);
 
 
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  
-  var previewImages = document.querySelectorAll("#imageContainer img");
-  var modalContainer = document.createElement("div");
-  var modalContent = document.createElement("div");
-  var modalImage = document.createElement("img");
-  var closeButton = document.createElement("span");
-  var body = document.body;
-  var photo = [
+  $(document).ready(function() {
+    var previewImages = $("#imageContainer img");
+    var modalContainer = $("<div></div>").attr("id", "modalContainer").addClass("modal-container");
+    var modalContent = $("<div></div>").attr("id", "modalContent").addClass("modal-content");
+    var modalImage = $("<img>").attr("id", "modalImage").addClass("modal-image").attr("alt", "");
+    var closeButton = $("<span></span>").addClass("close-button").html("&times;");
+    var body = $("body");
+    var photo = [
       'images/image1.jpg',
       'images/image2.jpg',
       'images/image3.jpg',
@@ -104,49 +103,37 @@ document.addEventListener("DOMContentLoaded", function () {
       'images/image46.jpg',
       'images/image47.jpg',
       'images/image48.jpg',
-    ];
+      ];
 
-  modalContainer.id = "modalContainer";
-  modalContainer.classList.add("modal-container");
-  modalContainer.appendChild(modalContent);
+      modalContainer.append(modalContent);
 
-  modalContent.id = "modalContent";
-  modalContent.classList.add("modal-content");
-  modalContent.appendChild(modalImage);
-  modalContent.appendChild(closeButton);
-
-  modalImage.id = "modalImage";
-  modalImage.classList.add("modal-image");
-  modalImage.setAttribute("alt", "");
-
-  closeButton.classList.add("close-button");
-  closeButton.innerHTML = "&times;";
-
-  document.body.appendChild(modalContainer);
-
-  previewImages.forEach(function (image) {
-    image.addEventListener("click", function () {
-      
-      var source = image.getAttribute("src");
-      var alt = image.getAttribute("alt");
-
-      modalImage.setAttribute("src", source);
-      modalImage.setAttribute("alt", alt);
-      
-      modalContainer.style.display = "block";
-
-     
-      body.classList.add("overflow-hidden");
+      modalContent.append(modalImage);
+      modalContent.append(closeButton);
+    
+      $("body").append(modalContainer);
+    
+      previewImages.each(function() {
+        var image = $(this);
+    
+        image.on("click", function() {
+          var source = image.attr("src");
+          var alt = image.attr("alt");
+    
+          modalImage.attr("src", source);
+          modalImage.attr("alt", alt);
+    
+          modalContainer.css("display", "block");
+    
+          body.addClass("overflow-hidden");
+        });
+      });
+    
+      closeButton.on("click", function() {
+        modalContainer.css("display", "none");
+    
+        body.removeClass("overflow-hidden");
+      });
     });
-  });
-
-  closeButton.addEventListener("click", function () {
-   
-    modalContainer.style.display = "none";
-
-    body.classList.remove("overflow-hidden");
-  });
-});
   
   
   
