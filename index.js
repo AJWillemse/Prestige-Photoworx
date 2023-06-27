@@ -105,35 +105,39 @@ $(window).on('load', function() {
       'images/image48.jpg',
       ];
 
-      modalContainer.append(modalContent);
+  modalContainer.append(modalContent);
+  modalContent.append(modalImage);
+  modalContent.append(closeButton);
 
-      modalContent.append(modalImage);
-      modalContent.append(closeButton);
-    
-      $("body").append(modalContainer);
-    
-      previewImages.each(function() {
-        var image = $(this);
-    
-        image.on("click", function() {
-          var source = image.attr("src");
-          var alt = image.attr("alt");
-    
-          modalImage.attr("src", source);
-          modalImage.attr("alt", alt);
-    
-          modalContainer.css("display", "block");
-    
-          body.addClass("overflow-hidden");
-        });
-      });
-    
-      closeButton.on("click", function() {
-        modalContainer.css("display", "none");
-    
-        body.removeClass("overflow-hidden");
-      });
+  $("body").append(modalContainer);
+
+  previewImages.each(function() {
+    var image = $(this);
+
+    image.on("click touchstart", function(event) {
+      event.preventDefault();
+
+      // Trigger vibration on touchstart event
+      if ('vibrate' in navigator) {
+        navigator.vibrate(500); // Vibrate for 100 milliseconds
+      }
+
+      var source = image.attr("src");
+      var alt = image.attr("alt");
+
+      modalImage.attr("src", source);
+      modalImage.attr("alt", alt);
+
+      modalContainer.css("display", "block");
+      body.addClass("overflow-hidden");
     });
+  });
+
+  closeButton.on("click", function() {
+    modalContainer.css("display", "none");
+    body.removeClass("overflow-hidden");
+  });
+});
   
   
   
