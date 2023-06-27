@@ -112,7 +112,7 @@ $(window).on('load', function() {
 
   function vibrateDevice() {
     if (navigator.vibrate) {
-      navigator.vibrate(100); // Adjust the vibration duration as needed
+      navigator.vibrate(50); // Adjust the vibration duration as needed
     }
   }
 
