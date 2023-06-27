@@ -119,7 +119,7 @@ $(window).on('load', function() {
 
       // Trigger vibration on touchstart event
       if ('vibrate' in navigator) {
-        navigator.vibrate(500); // Vibrate for 100 milliseconds
+        navigator.vibrate(100); // Vibrate for 100 milliseconds
       }
 
       var source = image.attr("src");
