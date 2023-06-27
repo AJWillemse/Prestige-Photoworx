@@ -106,34 +106,58 @@ $(window).on('load', function() {
       ];
 
       modalContainer.append(modalContent);
+  modalContent.append(modalImage);
+  modalContent.append(closeButton);
 
-      modalContent.append(modalImage);
-      modalContent.append(closeButton);
-    
-      $("body").append(modalContainer);
-    
-      previewImages.each(function() {
-        var image = $(this);
-    
-        image.on("click", function() {
-          var source = image.attr("src");
-          var alt = image.attr("alt");
-    
-          modalImage.attr("src", source);
-          modalImage.attr("alt", alt);
-    
-          modalContainer.css("display", "block");
-    
-          body.addClass("overflow-hidden");
-        });
-      });
-    
-      closeButton.on("click", function() {
-        modalContainer.css("display", "none");
-    
-        body.removeClass("overflow-hidden");
-      });
+  $("body").append(modalContainer);
+
+  var startX, startY;
+  var threshold = 20; // Minimum distance in pixels for swipe detection
+
+  previewImages.each(function() {
+    var image = $(this);
+    var timer;
+
+    image.on("touchstart", function(event) {
+      var touch = event.originalEvent.touches[0];
+      startX = touch.pageX;
+      startY = touch.pageY;
+
+      // Clear the previous timer (if any)
+      clearTimeout(timer);
+
+      timer = setTimeout(function() {
+        var source = image.attr("src");
+        var alt = image.attr("alt");
+
+        modalImage.attr("src", source);
+        modalImage.attr("alt", alt);
+
+        modalContainer.css("display", "block");
+        body.addClass("overflow-hidden");
+      }, delay);
     });
+
+    image.on("touchmove", function(event) {
+      var touch = event.originalEvent.touches[0];
+      var deltaX = Math.abs(touch.pageX - startX);
+      var deltaY = Math.abs(touch.pageY - startY);
+
+      if (deltaX > threshold || deltaY > threshold) {
+        clearTimeout(timer);
+      }
+    });
+
+    image.on("click", function(event) {
+      event.preventDefault();
+    });
+  });
+
+  closeButton.on("click", function() {
+    modalContainer.css("display", "none");
+    body.removeClass("overflow-hidden");
+  });
+});
   
   
   
