@@ -105,39 +105,35 @@ $(window).on('load', function() {
       'images/image48.jpg',
       ];
 
-  modalContainer.append(modalContent);
-  modalContent.append(modalImage);
-  modalContent.append(closeButton);
-  $("body").append(modalContainer);
+      modalContainer.append(modalContent);
 
-  function vibrateDevice() {
-    if (navigator.vibrate) {
-      navigator.vibrate(50); // Adjust the vibration duration as needed
-    }
-  }
-
-  previewImages.each(function(index) {
-    var image = $(this);
-
-    image.on("click", function() {
-      var source = photo[index];
-      var alt = image.attr("alt");
-
-      modalImage.attr("src", source);
-      modalImage.attr("alt", alt);
-
-      modalContainer.css("display", "block");
-      body.addClass("overflow-hidden");
-      
-      vibrateDevice(); // Vibrate the device on photo open
+      modalContent.append(modalImage);
+      modalContent.append(closeButton);
+    
+      $("body").append(modalContainer);
+    
+      previewImages.each(function() {
+        var image = $(this);
+    
+        image.on("click", function() {
+          var source = image.attr("src");
+          var alt = image.attr("alt");
+    
+          modalImage.attr("src", source);
+          modalImage.attr("alt", alt);
+    
+          modalContainer.css("display", "block");
+    
+          body.addClass("overflow-hidden");
+        });
+      });
+    
+      closeButton.on("click", function() {
+        modalContainer.css("display", "none");
+    
+        body.removeClass("overflow-hidden");
+      });
     });
-  });
-
-  closeButton.on("click", function() {
-    modalContainer.css("display", "none");
-    body.removeClass("overflow-hidden");
-  });
-});
   
   
   

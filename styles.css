@@ -203,10 +203,6 @@ body {
 
 @media (max-width: 1080px) {
 
-    body {
-        background-image: url(images/background\ image\ 2.jpg);
-    }
-
     .profile-image {
         margin-left: 2%;
         margin-top: 5%;
