@@ -106,43 +106,31 @@ $(window).on('load', function() {
       ];
 
       modalContainer.append(modalContent);
+
       modalContent.append(modalImage);
       modalContent.append(closeButton);
     
       $("body").append(modalContainer);
     
-      var delay = 1000; // Delay in milliseconds
-    
       previewImages.each(function() {
         var image = $(this);
-        var timer;
     
-        image.on("click touchstart", function(event) {
-          event.preventDefault();
+        image.on("click", function() {
+          var source = image.attr("src");
+          var alt = image.attr("alt");
     
-          // Clear the previous timer (if any)
-          clearTimeout(timer);
+          modalImage.attr("src", source);
+          modalImage.attr("alt", alt);
     
-          // Trigger vibration on touchstart event
-          if ('vibrate' in navigator) {
-            navigator.vibrate(100); // Vibrate for 100 milliseconds
-          }
+          modalContainer.css("display", "block");
     
-          timer = setTimeout(function() {
-            var source = image.attr("src");
-            var alt = image.attr("alt");
-    
-            modalImage.attr("src", source);
-            modalImage.attr("alt", alt);
-    
-            modalContainer.css("display", "block");
-            body.addClass("overflow-hidden");
-          }, delay);
+          body.addClass("overflow-hidden");
         });
       });
     
       closeButton.on("click", function() {
         modalContainer.css("display", "none");
+    
         body.removeClass("overflow-hidden");
       });
     });
