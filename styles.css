@@ -15,6 +15,17 @@ body {
     transition: opacity 4s ease-in-out;
 }
 
+#downArrows {
+    animation: fadeEffect 3s infinite;
+    opacity: 0;
+  }
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
 .fixed-background {
     position: fixed;
     top: 0;
@@ -48,6 +59,12 @@ body {
 
 @media (min-width: 1081px) {
     .mobile-fixed-cover-image {
+    display: none;
+    }
+}
+
+@media (min-width: 1081px) {
+    .down-arrows {
     display: none;
     }
 }
@@ -117,6 +134,12 @@ body {
 .company-slogan {
     color: blueviolet;
     font-weight: bold;
+}
+
+.down-arrows {
+    margin-left: 85%;
+    margin-top: 5%;
+    width: 8%;
 }
 
 .preview-images {

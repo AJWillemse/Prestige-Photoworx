@@ -6,10 +6,17 @@ $(window).on('load', function() {
 
 
 
-  $(window).on('load', function() {
+$(window).on('load', function() {
     var image = $('#profile');
     image.css('opacity', 1);
-  });
+});
+
+
+
+
+$(document).ready(function() {
+    $('#downArrows').css('opacity', 1);
+});
 
 
 
