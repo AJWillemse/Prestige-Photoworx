@@ -318,8 +318,9 @@ body {
 
     .down-arrows {
         margin-left: 75%;
-        margin-top: -10;
-        width: 25%;
+        margin-top: -15;
+        rotate: 180deg;
+        width: 20%;
     }
 
     .h1-preview {
