@@ -269,6 +269,23 @@ body {
 
 
 
+@media (min-width: 1081px) and (max-width: 1440px) {
+
+    .down-arrows {
+        margin-top: 0;
+    }
+
+    .btn {
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1080px) {
 
@@ -318,9 +335,8 @@ body {
 
     .down-arrows {
         margin-left: 75%;
-        margin-top: -15;
         rotate: 180deg;
-        width: 20%;
+        width: 15%;
     }
 
     .h1-preview {
