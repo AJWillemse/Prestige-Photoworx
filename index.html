@@ -22,11 +22,17 @@
 
 <body>
 
-    <div class="content">
+    <div class="fixed-background">
+        <img class="fixed-background-image" src="images/fixed background image.jpg" alt="">
+        <img class="mobile-fixed-background-image" src="images/mobile fixed background image.jpg" alt="">
+    </div>
 
-        <div id="cover" class="cover">
-            <img class="cover-image" src="images/cover picture.jpg" alt="">
-        </div>
+    <div id="cover" class="fixed-cover">
+        <img class="fixed-cover-image" src="images/cover picture.png" alt="">
+        <img class="mobile-fixed-cover-image" src="images/mobile cover image.png" alt="">
+    </div>
+
+    <div class="content">
 
         <div id="profile" class="profile">
             <img class="profile-image" src="images/profile picture.png" alt="">
@@ -39,11 +45,11 @@
                 all your special life events and <span class="company-slogan"><em>'make a moment last forever'</em></span> .</p>
         </div>
 
-        <div class="profile fade-in">
+        <div class="preview-heading fade-in">
             <h1 class="h1-preview">PREVIEW</h1>
             <h3 class="h3-preview">(Click image to enlarge)</h3>
 
-           <div id="imageContainer" class="preview">
+        <div id="imageContainer" class="preview-images">
             <img class="photo-2" src="images/image2.jpg" alt="">
             <img class="photo-2" src="images/image3.jpg" alt="">
             <img class="photo-2" src="images/image6.jpg" alt="">
@@ -100,8 +106,8 @@
             <img class="photo-3" src="images/image4.jpg" alt="">
             <img class="photo-3" src="images/image1.jpg" alt="">
 
-            <a href="mailto:adriaan.willemse80@gmail.com" class="btn btn-outline-light">Get In Touch</a>
-           </div>
+            <a href="mailto:adriaan.willemse80@gmail.com" class="btn btn-outline-primary">Get In Touch</a>
+        </div>
 
            <div id="modalContainer" class="modal-container">
                <div id="modalContent" class="modal-content">
@@ -112,15 +118,15 @@
 
         </div>
 
-        <div class="footer-container">
-            <a href="https://www.facebook.com/search/top?q=prestige%20photoworx"><img class="logo-facebook" src="images/Logo Facebook.png" alt="logo"></a>
-            <a href="https://www.instagram.com/prestige_photoworx/"><img class="logo-instagram" src="images/Logo Instagram.png" alt="logo"></a>
-            <p class="copyright-text">Developed by</p>
-            <h3 class="copyright-h3">©Prestige Webworx</h3>
-        </div>
-
     </div>
 
-            <script src="index.js"></script>
+    <div class="footer-container">
+        <a href="https://www.facebook.com/search/top?q=prestige%20photoworx"><img class="logo-facebook" src="images/Logo Facebook.png" alt="logo"></a>
+        <a href="https://www.instagram.com/prestige_photoworx/"><img class="logo-instagram" src="images/Logo Instagram.png" alt="logo"></a>
+        <p class="copyright-text">Developed by</p>
+        <a class="link-footer" href="https://ajwillemse.github.io/Prestige-Webworx/">©Prestige Webworx</a>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

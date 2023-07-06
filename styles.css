@@ -15,35 +15,80 @@ body {
     transition: opacity 4s ease-in-out;
 }
 
+.fixed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.fixed-background-image {
+    width: 100%;
+}
+
+@media (min-width: 1081px) {
+    .mobile-fixed-background-image {
+    display: none;
+    }
+}
+
+@media (min-width: 1081px) {
+    .mobile-fixed-cover-image {
+    display: none;
+    }
+}
+
+@media (min-width: 1081px) {
+    .mobile-fixed-background-image {
+    display: none;
+    }
+}
+
+@media (min-width: 1081px) {
+    .mobile-fixed-cover-image {
+    display: none;
+    }
+}
+
+.fixed-cover {
+    left: 20%;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 2;
+}
+
+.fixed-cover-image {
+    box-shadow: 0px 0px 20px black;
+    width: 60%;
+}
+
 .content {
-    background-image: url(images/background\ image.jpg);
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 20px black;
+    margin: auto;
+    margin-top: 15%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    width: 60%;
+    position: relative;
+    z-index: 1;
 }
 
 .fade-in {
     opacity: 0;
     transition: opacity 3s ease-in-out;
-  }
-
-.cover {
-    margin: auto;
-    width: 100%;
-}
-
-.cover-image {
-    box-shadow: 0px 0px 20px #C8C6C6;
-    width: 100%;
 }
 
 .profile {
-    backdrop-filter: blur(2px);
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px #C8C6C6;
     margin: auto;
-    margin-top: 8%;
-    padding-bottom: 5%;
+    margin-top: 5%;
+    padding-bottom: 3%;
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
 .profile-image {
@@ -52,64 +97,71 @@ body {
     float: right;
     margin-left: 3%;
     margin-bottom: 3%;
-    margin-top: 3%;
     margin-right: 5%;
-    width: 30%;
+    width: 25%;
 }
 
 .h1-profile {
-    font-size: 5rem;
-    margin-bottom: 0;
-    margin-left: 5%;
-    padding-top: 5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-left: 2%;
 }
 
 .text-profile {
-    font-size: 2rem;
-    line-height: 2;
-    margin-left: 5%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-left: 2%;
 }
 
 .company-slogan {
+    color: blueviolet;
     font-weight: bold;
 }
 
-.preview {
+.preview-images {
     display: flex;
     flex-wrap: wrap;
 }
 
+.preview-heading {
+    margin-top: 10%;
+}
+
 .h1-preview {
-    font-size: 7rem;
-    padding-top: 3%;
+    font-size: 5rem;
+    font-weight: bold;
     text-align: center;
 }
 
 .h3-preview {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     text-align: center;
 }
 
 .photo-2 {
-    box-shadow: 0px 0px 20px #C8C6C6;
+    box-shadow: 0px 0px 15px black;
     margin: auto;
     margin-top: 5%;
     width: 22%;
 }
 
 .photo-3 {
-    box-shadow: 0px 0px 20px #C8C6C6;
+    box-shadow: 0px 0px 15px black;
     margin: auto;
     margin-top: 5%;
     width: 28.5%;
 }
 
 .btn {
-    box-shadow: 0px 0px 8px #C8C6C6;
+    color: blueviolet;
+    box-shadow: 0px 0px 4px blueviolet;
     font-size: 2rem;
+    font-weight: bold;
     margin: auto;
     margin-top: 8%;
+    text-shadow: 0px 0px 3px blue;
     width: 20%;
 }
 
@@ -164,32 +216,33 @@ body {
 
 .footer-container {
     margin: auto;
-    margin-top: 8%;
+    margin-top: 3%;
     text-align: center;
 }
 
 .copyright-text {
-    color: white;
+    color: black;
     margin: 0;
-    text-shadow: 0px 0px 6px white;
+    text-shadow: 0px 0px 3px black;
 }
 
-.copyright-h3 {
-    color: white;
-    margin: 0;
-    text-shadow: 0px 0px 6px white;
+.link-footer {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px black;
 }
 
 .logo-facebook {
     margin-right: 1%;
     margin-top: 1%;
-    width: 10%;
+    width: 6%;
 }
 
 .logo-instagram {
     margin-left: 1%;
-    margin-top: 1.8%;
-    width: 10%;
+    margin-top: 1.5%;
+    width: 6%;
 }
 
 
@@ -200,6 +253,40 @@ body {
 
 
 @media (max-width: 1080px) {
+
+    body {
+        color: black;
+        text-shadow: 0px 0px 3px black;
+    }
+
+    .fixed-background-image {
+        display: none;
+    }
+
+    .fixed-cover-image {
+        display: none;
+    }
+
+    .mobile-fixed-background-image {
+        width: 100%;
+    }
+
+    .fixed-cover {
+        left: 0;
+    }
+
+    .mobile-fixed-cover-image {
+        box-shadow: 0px 0px 80px black;
+        width: 100%;
+    }
+
+    .content {
+        background-color: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0px);
+        box-shadow: 0px 0px 0px black;
+        margin-top: 40%;
+        width: 100%;
+    }
 
     .profile-image {
         margin-left: 2%;
