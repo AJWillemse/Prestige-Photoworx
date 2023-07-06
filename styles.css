@@ -63,12 +63,6 @@ body {
     }
 }
 
-@media (min-width: 1081px) {
-    .down-arrows {
-    display: none;
-    }
-}
-
 .fixed-cover {
     left: 20%;
     position: fixed;
@@ -139,6 +133,7 @@ body {
 .down-arrows {
     margin-left: 85%;
     margin-top: 5%;
+    rotate: 180deg;
     width: 8%;
 }
 
