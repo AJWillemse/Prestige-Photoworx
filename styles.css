@@ -321,6 +321,12 @@ body {
         font-size: 5rem;
     }
 
+    .down-arrows {
+        margin-left: 75%;
+        margin-top: 0;
+        width: 15%;
+    }
+
     .h1-preview {
         font-size: 6rem;
     }
