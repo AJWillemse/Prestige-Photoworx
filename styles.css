@@ -335,7 +335,7 @@ body {
 
     .down-arrows {
         margin-left: 75%;
-        rotate: 180deg;
+        margin-top: 0;
         width: 15%;
     }
 
