@@ -172,13 +172,13 @@ body {
 }
 
 .btn {
-    color: blueviolet;
-    box-shadow: 0px 0px 4px blueviolet;
+    color: #9376E0;
+    box-shadow: 0px 0px 4px #7895CB;
     font-size: 2rem;
     font-weight: bold;
     margin: auto;
     margin-top: 8%;
-    text-shadow: 0px 0px 3px blue;
+    text-shadow: 0px 0px 0px;
     width: 20%;
 }
 
@@ -239,27 +239,25 @@ body {
 }
 
 .copyright-text {
-    color: blueviolet;
+    color: #4E4FEB;
     margin: 0;
-    text-shadow: 0px 0px 3px blue;
 }
 
 .link-footer {
-    color: blueviolet;
+    color: #4E4FEB;
     font-size: 1.2rem;
-    text-shadow: 0px 0px 2px blue;
 }
 
 .logo-facebook {
-    margin-bottom: 0.4%;
+    margin-bottom: 0.8%;
     margin-right: 1%;
-    width: 6%;
+    width: 10%;
 }
 
 .logo-instagram {
     margin-left: 1%;
     margin-top: 0%;
-    width: 6%;
+    width: 10%;
 }
 
 
@@ -276,15 +274,6 @@ body {
 
     .btn {
         width: 30%;
-    }
-
-    .logo-facebook {
-        margin-bottom: 0.7%;
-        width: 10%;
-    }
-    
-    .logo-instagram {
-        width: 10%;
     }
 }
 
@@ -385,11 +374,13 @@ body {
     }
 
     .copyright-text {
+        text-shadow: 0px 0px 0px;
         font-size: 2rem;
     }
 
     .link-footer {
         font-size: 2.5rem;
+        text-shadow: 0px 0px 0px;
     }
 
 }
