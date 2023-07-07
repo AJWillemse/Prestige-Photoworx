@@ -102,7 +102,7 @@ body {
 }
 
 .profile-image {
-    box-shadow: 0px 0px 20px #C8C6C6;
+    box-shadow: 0px 0px 30px black;
     border-radius: 400px;
     float: right;
     margin-left: 3%;
@@ -322,7 +322,7 @@ body {
     .profile-image {
         margin-left: 2%;
         margin-top: 5%;
-        width: 40%;
+        width: 45%;
     }
 
     .h1-profile {
