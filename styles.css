@@ -356,7 +356,12 @@ body {
     }
 
     .photo-2 {
+        box-shadow: 0px 0px 30px black;
         width: 45%;
+    }
+    
+    .photo-3 {
+        box-shadow: 0px 0px 15px black;
     }
 
     .btn {
