@@ -339,6 +339,10 @@ body {
         width: 15%;
     }
 
+    .preview-heading {
+        margin-top: 3%;
+    }
+
     .h1-preview {
         font-size: 6rem;
     }
