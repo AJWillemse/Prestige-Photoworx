@@ -126,7 +126,7 @@ body {
 }
 
 .company-slogan {
-    color: blueviolet;
+    color: #4E4FEB;;
     font-weight: bold;
 }
 
@@ -146,12 +146,14 @@ body {
 }
 
 .h1-preview {
+    color: #4E4FEB;
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
 }
 
 .h3-preview {
+    color: #4E4FEB;
     font-size: 1.5rem;
     font-weight: lighter;
     text-align: center;
@@ -172,8 +174,8 @@ body {
 }
 
 .btn {
-    color: #9376E0;
-    box-shadow: 0px 0px 4px #7895CB;
+    color: #4E4FEB;
+    box-shadow: 0px 0px 4px #4E4FEB;
     font-size: 2rem;
     font-weight: bold;
     margin: auto;
