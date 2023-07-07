@@ -251,14 +251,14 @@ body {
 }
 
 .logo-facebook {
+    margin-bottom: 0.4%;
     margin-right: 1%;
-    margin-top: 1%;
     width: 6%;
 }
 
 .logo-instagram {
     margin-left: 1%;
-    margin-top: 1.5%;
+    margin-top: 0%;
     width: 6%;
 }
 
@@ -276,6 +276,15 @@ body {
 
     .btn {
         width: 30%;
+    }
+
+    .logo-facebook {
+        margin-bottom: 0.7%;
+        width: 10%;
+    }
+    
+    .logo-instagram {
+        width: 10%;
     }
 }
 
@@ -367,12 +376,12 @@ body {
     }
 
     .logo-facebook {
-        width: 20%;
+        margin-bottom: 2.5%;
+        width: 30%;
     }
 
     .logo-instagram {
-        width: 20%;
-        margin-top: 2.6%;
+        width: 30%;
     }
 
     .copyright-text {
