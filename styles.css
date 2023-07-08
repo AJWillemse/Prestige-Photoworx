@@ -167,7 +167,7 @@ body {
 }
 
 .photo-2:hover {
-    box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 20px #4E4FEB;
   }
 
 .photo-3 {
@@ -178,7 +178,7 @@ body {
 }
 
 .photo-3:hover {
-    box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 20px #4E4FEB;
   }
 
 .btn {
