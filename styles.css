@@ -317,6 +317,7 @@ body {
 
     .fixed-cover {
         left: 0;
+        width: 100%;
     }
 
     .mobile-fixed-cover-image {
@@ -359,7 +360,7 @@ body {
     }
 
     .h3-preview {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .text-profile {
